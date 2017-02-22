@@ -1,5 +1,7 @@
 import clinic.Client;
 import clinic.Clinic;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.runner.Description;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.notification.Failure;
@@ -47,6 +49,14 @@ public class test {
         ArrayList<Client> arrayListContainingNeededClient = new ArrayList<Client>();
         arrayListContainingNeededClient.add(clinic.getClients()[0]);
         assertEquals(res,arrayListContainingNeededClient);
+    }
+    @Before
+    public void before(){
+        System.out.println("Before");
+    }
+    @After
+    public void after(){
+        System.out.println("After");
     }
 
     static class ClinicListener extends RunListener {

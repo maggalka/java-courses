@@ -17,4 +17,13 @@ public class Cat extends Pet {
     public void makeSound() {
         System.out.println("May, May");
     }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 }

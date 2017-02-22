@@ -38,10 +38,10 @@ public class Clinic {
      */
     public ArrayList<Client> findClientsByPetName(String petName){
         ArrayList<Client> neededClients = new ArrayList<Client>();
-        for (Client client : clients)
-            if (client!=null&&client.getPet()!=null&&
-                    petName.equals(client.getPet().getName()))
-                neededClients.add(client);
+        for (int i=0; i < this.clients.length; i++)
+            if (clients[i]!=null&&clients[i].getPet()!=null&&
+                    petName.equals(clients[i].getPet().getName()))
+                neededClients.add(clients[i]);
         return neededClients;
     }
     /**
@@ -50,9 +50,9 @@ public class Clinic {
      */
     public ArrayList<Client> findClientsById(String id){
         ArrayList<Client> neededClients = new ArrayList<Client>();
-        for (Client client : clients)
-            if (client!=null&&client.getId().equals(id))
-                neededClients.add(client);
+        for (int i=0; i < this.clients.length; i++)
+            if (clients[i]!=null&&clients[i].getId().equals(id))
+                neededClients.add(clients[i]);
         return neededClients;
     }
     /**

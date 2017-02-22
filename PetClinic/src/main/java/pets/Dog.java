@@ -17,4 +17,12 @@ public class Dog extends Pet {
         System.out.println("Gav, Gav");
     }
 
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 }
