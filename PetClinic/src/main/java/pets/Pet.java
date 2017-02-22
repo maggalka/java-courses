@@ -15,12 +15,15 @@ public abstract class Pet {
     abstract void makeSound();
 
     /**
-     * Имя питомца
+     * Получить имя питомца
      */
     public String getName() {
         return this.name;
     }
 
+    /**
+     * Установить имя питомца
+     */
     public void setName(String name) {
         this.name = name;
     }

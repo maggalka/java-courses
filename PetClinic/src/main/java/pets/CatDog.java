@@ -2,6 +2,9 @@ package pets;
 
 /**
  * Created by Vladimir on 22.02.2017.
+ * Реализация котопса.
+ * @author Vladimir
+ * @since 22.02.2017
  */
 public class CatDog extends Pet {
     private Cat cat;
