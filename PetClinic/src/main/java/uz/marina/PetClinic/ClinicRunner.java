@@ -1,8 +1,10 @@
-import clinic.Client;
-import clinic.Clinic;
-import pets.Cat;
-import pets.CatDog;
-import pets.Dog;
+package uz.marina.PetClinic;
+
+import uz.marina.PetClinic.clinic.Client;
+import uz.marina.PetClinic.clinic.Clinic;
+import uz.marina.PetClinic.pets.Cat;
+import uz.marina.PetClinic.pets.CatDog;
+import uz.marina.PetClinic.pets.Dog;
 
 /**
  * Created by Vladimir on 22.02.2017.

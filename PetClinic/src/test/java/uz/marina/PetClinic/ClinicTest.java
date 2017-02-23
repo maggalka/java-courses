@@ -1,14 +1,16 @@
-import clinic.Client;
-import clinic.Clinic;
+package uz.marina.PetClinic;
+
+import uz.marina.PetClinic.clinic.Client;
+import uz.marina.PetClinic.clinic.Clinic;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.runner.Description;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunListener;
-import pets.Cat;
-import pets.CatDog;
-import pets.Dog;
+import uz.marina.PetClinic.pets.Cat;
+import uz.marina.PetClinic.pets.CatDog;
+import uz.marina.PetClinic.pets.Dog;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -17,12 +19,15 @@ import static org.junit.Assert.assertEquals;
 
 /**
  * Created by Vladimir on 22.02.2017.
+ * Тесты
+ * @author Vladimir
+ * @since 22.02.2017
  */
-public class test {
+public class ClinicTest {
     public static void main(String[] args) {
         JUnitCore core = new JUnitCore();
         core.addListener(new ClinicListener());
-        core.run(test.class);
+        core.run(ClinicTest.class);
     }
     public void addClients(Clinic clinic){
         clinic.addClient(0, new Client("Brown", new Cat("Digy")));

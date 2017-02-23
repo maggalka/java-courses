@@ -1,4 +1,4 @@
-package pets;
+package uz.marina.PetClinic.pets;
 
 /**
  * Created by Vladimir on 22.02.2017.

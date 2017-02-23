@@ -1,6 +1,6 @@
-package clinic;
+package uz.marina.PetClinic.clinic;
 
-import pets.Pet;
+import uz.marina.PetClinic.pets.Pet;
 
 /**
  * Created by Vladimir on 22.02.2017.

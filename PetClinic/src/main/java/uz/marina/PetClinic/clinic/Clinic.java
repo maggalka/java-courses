@@ -1,4 +1,4 @@
-package clinic;
+package uz.marina.PetClinic.clinic;
 
 import java.util.ArrayList;
 
